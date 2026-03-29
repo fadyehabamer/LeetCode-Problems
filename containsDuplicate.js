@@ -5,8 +5,7 @@ var containsDuplicate = function (nums) {
       if (nums[i] == nums[j]) return true;
     }
   }
-    return false;
-    
+  return false;
 };
 
 // var containsDuplicate = function (nums) {
@@ -15,7 +14,9 @@ var containsDuplicate = function (nums) {
 //   return set.size != nums.length;
 // };
 
+var containsDuplicate = function (nums) {
+  return new Set(nums).size !== nums.length;
+};
 
 console.log(containsDuplicate([1, 2, 3, 1]));
 
-// leetcode submittions
