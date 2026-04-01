@@ -21,7 +21,7 @@ var productExceptSelf = function (nums) {
    
   }
     console.log(lhs); // النتيجة هتكون: [1, 1, 2, 6]
-
+  return lhs;
 };
 
 productExceptSelf([1, 2, 3, 4]);
