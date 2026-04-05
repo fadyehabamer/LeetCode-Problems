@@ -11,10 +11,14 @@ var mergeTwoLists = function(list1, list2) {
     let dummy = new ListNode(0);
     let current = dummy;
 
+    console.log(dummy); // 
+    console.log(list1); //
+
+    
     // التعديل الجوهري: نستخدم while بدل if
     while (list1 !== null && list2 !== null) {
         if (list1.val <= list2.val) {
-            current.next = list1;
+            current.next = list1; // 
             list1 = list1.next;
         } else {
             // هنا مش محتاجين if تانية، الـ else كفاية
